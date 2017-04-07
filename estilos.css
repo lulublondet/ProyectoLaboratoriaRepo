@@ -1,0 +1,53 @@
+div.foto{
+  width: 25%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border: dotted;		
+}
+
+.imagen{
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  height: auto;
+  transition: .5s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  z-index: 1000;
+}
+.overlay:hover {
+  background-color: rgba(249,203,11, 0.5);
+}
+.foto:hover .imagen{
+  transform: scale(1.1);
+}
+
+.overlay span{
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  left: 20%;
+  right:0;
+  bottom: 50%;
+  font-size: 100%;
+  display: none;
+  transition: 5s;
+}
+.overlay:hover span{
+  display: block;
+}
+.promo{
+  width: 80%;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
